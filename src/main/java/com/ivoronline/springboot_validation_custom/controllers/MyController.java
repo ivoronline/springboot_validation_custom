@@ -21,7 +21,7 @@ public class MyController {
   //==================================================================
   @ResponseBody
   @RequestMapping("/Hello")
-  public String hello(@RequestParam @AgeConstraint Integer age) {
+  public String hello(@AgeConstraint @RequestParam Integer age) {
     return "John is " + age + " years old";
   }
 
